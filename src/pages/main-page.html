@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/tailwind.css" />
+    <script
+      src="https://kit.fontawesome.com/b223d2f563.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-background">
+    <navbar id="desktop-navbar"></navbar>
+    <navbar id="mobile-navbar"></navbar>
+    <div class="flex w-full relative">
+      <main
+        class="pb-[100px] lg:pb-10 lg:py-[30px] w-full h-full min-h-screen lg:min-h-[calc(100vh-62px)]">
+        <aside type="module " id="aside-desktop"></aside>
+        <section
+          class="grid grid-cols-12 grid-rows-[12] w-[90%] gap-5 mx-auto mt-[40px] lg:mt-0 h-full">
+          <section
+            class="bg-slate-50 rounded-md drop-shadow-md col-span-12 lg:col-span-7 xl:col-span-8 row-span-2 lg:row-span-4 lg:row-start-1 w-full min-h-[400px] lg:h-[500px]"></section>
+        </section>
+      </main>
+    </div>
+    <script src="../scripts/common/navbar.js" type="module"></script>
+    <script src="../scripts//common/aside.js" type="module"></script>
+  </body>
+</html>

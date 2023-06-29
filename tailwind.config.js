@@ -11,8 +11,8 @@ export default {
         accent: "#47595c",
       },
       fontFamily: {
-        title: ["Russo One", "sans-serif"],
-        text: ["Poppins", "sans-serif"],
+        text: ["Roboto Slab", "sans-serif"],
+        title: ["Roboto Slab", "sans-serif"],
       },
     },
   },
