@@ -14,7 +14,7 @@ DesktopNavBar.innerHTML = `
 <div class="px-[80px] w-full flex items-center justify-between max-w-[1580px] mx-auto">
 <section class="flex items-center pt-4 gap-5">
   <a class="font-title text-text text-[30px] pl-2" href="./main-page.html">
-    T <span class="bg-primaryBtn px-1 py-2 rounded-md">News</span>
+    T <span class="bg-slate-950 px-1 py-2 rounded-md">News</span>
   </a>
   <ul
     class="flex items-center gap-5  text-slate-200 text-lg font-semibold uppercase tracking-[1.15px]"
@@ -48,10 +48,10 @@ DesktopNavBar.innerHTML = `
       font-title
     />
     <button
-      class="bg-primaryBtn hover:bg-blue-600 transition-colors duration-200 p-3"
+      class="bg-slate-950 hover:bg-blue-600 transition-colors duration-200 p-3"
       type="submit"
     >
-      <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      <i class="fa-solid fa-magnifying-glass fa-lg text-text"></i>
     </button>
   </div>
 </form>
