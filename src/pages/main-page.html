@@ -17,9 +17,76 @@
         class="pb-[100px] lg:pb-10 lg:py-[30px] w-full h-full min-h-screen lg:min-h-[calc(100vh-62px)]">
         <aside type="module " id="aside-desktop"></aside>
         <section
-          class="grid grid-cols-12 grid-rows-[12] w-[90%] gap-5 mx-auto mt-[40px] lg:mt-0 h-full">
+          class="grid grid-cols-12 grid-rows-[12] w-[90%] gap-5 mx-auto lg:mt-0 h-full">
+          <!-- Lastest News -->
           <section
-            class="bg-slate-50 rounded-md drop-shadow-md col-span-12 lg:col-span-7 xl:col-span-8 row-span-2 lg:row-span-4 lg:row-start-1 w-full min-h-[400px] lg:h-[500px]"></section>
+            id="scroll-news"
+            class="bg-black rounded-md drop-shadow-md w-full col-start-3 col-end-10 row-span-2">
+            <section class="flex flex-col items-center justify-center">
+              <h1 class="font-title text-4xl text-text">Last News</h1>
+              <div
+                id="news-container"
+                class="flex flex-col items-center p-3 justify-center w-full h-full gap-3 overflow-y-scroll">
+                <div
+                  id="new-container"
+                  class="bg-slate-950 rounded-md p-3 w-[90%]flex flex-col">
+                  <div id="new-image-container">
+                    <img src="" alt="image" />
+                  </div>
+                  <div
+                    id="new-info"
+                    class="flex flex-col gap-3 text-text items-start justify-center">
+                    <h1 class="font-title text-2xl">New Title</h1>
+                    <p class="font-text text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Necessitatibus earum amet et accusamus odio doloremque
+                      officia aliquid alias cupiditate exercitationem iste
+                      quibusdam repudiandae in laudantium neque, at odit
+                      perspiciatis impedit. Veniam iste, quas iusto molestias
+                      itaque neque possimus consectetur? Culpa laboriosam soluta
+                      reprehenderit pariatur similique dolores accusantium
+                      tempora, consequatur cupiditate corrupti at iure incidunt
+                      blanditiis fugit ut nobis saepe temporibus. Autem, sequi
+                      odio facere voluptates odit nostrum aliquam at! Ex
+                      excepturi deserunt obcaecati enim nihil pariatur labore in
+                      minus. Laborum doloribus cumque accusamus consectetur
+                      iusto architecto voluptas aut quo totam?
+                    </p>
+                  </div>
+                </div>
+                <div
+                  id="new-container"
+                  class="bg-slate-950 rounded-md p-3 w-[90%]flex flex-col">
+                  <div id="new-image-container">
+                    <img src="" alt="image" />
+                  </div>
+                  <div
+                    id="new-info"
+                    class="flex flex-col gap-3 text-text items-start justify-center">
+                    <h1 class="font-title text-2xl">New Title</h1>
+                    <p class="font-text text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Necessitatibus earum amet et accusamus odio doloremque
+                      officia aliquid alias cupiditate exercitationem iste
+                      quibusdam repudiandae in laudantium neque, at odit
+                      perspiciatis impedit. Veniam iste, quas iusto molestias
+                      itaque neque possimus consectetur? Culpa laboriosam soluta
+                      reprehenderit pariatur similique dolores accusantium
+                      tempora, consequatur cupiditate corrupti at iure incidunt
+                      blanditiis fugit ut nobis saepe temporibus. Autem, sequi
+                      odio facere voluptates odit nostrum aliquam at! Ex
+                      excepturi deserunt obcaecati enim nihil pariatur labore in
+                      minus. Laborum doloribus cumque accusamus consectetur
+                      iusto architecto voluptas aut quo totam?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <!-- Trending Topics -->
+          <section
+            class="bg-black rounded-md drop-shadow-md w-full min-h-[400px] col-start-10 col-end-13 lg:max-h-[1020px]"></section>
         </section>
       </main>
     </div>
@@ -27,3 +94,5 @@
     <script src="../scripts//common/aside.js" type="module"></script>
   </body>
 </html>
+<!-- col-span-12 lg:col-span-7 xl:col-span-8 row-span-2 lg:row-span-4 lg:row-start-1 w -->
+<!-- col-span-12 lg:col-span-5 xl:col-span-4 lg:col-start-8 xl:col-start-9 lg:row-[span_8_/_span_8]  -->

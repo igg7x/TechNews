@@ -12,7 +12,7 @@ export default {
       },
       fontFamily: {
         text: ["Roboto Slab", "sans-serif"],
-        title: ["Roboto Slab", "sans-serif"],
+        title: ["Bacasime Antique", "sans-serif"],
       },
     },
   },
