@@ -11,10 +11,10 @@ export default {
         accent: "#47595c",
       },
       fontFamily: {
-        title: ["Russo One", "sans-serif"],
-        text: ["Poppins", "sans-serif"],
+        text: ["Roboto Slab", "sans-serif"],
+        title: ["Bacasime Antique", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
