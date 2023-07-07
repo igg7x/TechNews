@@ -11,6 +11,7 @@ export const checkAuthState = () => {
 
 export const logout = () => {
   signOut(auth).then(() => {
+    sessionStorage.removeItem("userId");
     window.location.href = `${window.location.origin}/src/pages/login.html`;
   });
 };

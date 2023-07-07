@@ -1,7 +1,7 @@
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../../firebase/index.js";
 import { setDoc, doc } from "firebase/firestore";
-
+import { errorNotification, successNotification } from "../../tostify/main.js";
 const googleBtn = document.querySelector("#googleBtn");
 const signUpError = document.querySelector("#signUpError");
 
@@ -23,6 +23,6 @@ googleBtn.addEventListener("click", async () => {
     sessionStorage.setItem("userId", userCredentials.user.uid);
     window.location.href = `${window.location.origin}/src/pages/main-page.html`;
   } catch (error) {
-    console.log(error);
+    errorNotification();
   }
 });

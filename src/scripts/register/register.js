@@ -1,6 +1,8 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { auth, db } from "../../firebase/index.js";
+import { successNotification, errorNotification } from "../../tostify/main.js";
+
 const registerEl = document.querySelector("#registerForm");
 
 const usernameContainer = document.querySelector("#usernameContainer");
@@ -91,6 +93,7 @@ registerEl.addEventListener("submit", async (e) => {
     if (error.code === "auth/weak-password") {
       passwordError.textContent = "Weak password";
     }
+    errorNotification();
   }
   registerEl.reset();
 });
