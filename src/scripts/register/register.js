@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "./../../firebase/index.js";
+import { doc, setDoc } from "firebase/firestore";
+import { auth, db } from "../../firebase/index.js";
 const registerEl = document.querySelector("#registerForm");
 
 const usernameContainer = document.querySelector("#usernameContainer");
@@ -43,7 +44,7 @@ registerEl.addEventListener("submit", async (e) => {
   }
   passwordConfirmError.textContent = "";
   if (username.trim().length < 5) {
-    username.textContent = "Username must be at least 5 characters";
+    usernameError.textContent = "Username must be at least 5 characters";
     return;
   }
   usernameError.textContent = "";
@@ -69,6 +70,16 @@ registerEl.addEventListener("submit", async (e) => {
       email,
       password
     );
+    const { user } = userCredentials;
+    await setDoc(doc(db, "Users", user.uid), {
+      username,
+      email,
+      saved: [],
+      profilePicture:
+        "https://t4.ftcdn.net/jpg/04/08/24/43/360_F_408244382_Ex6k7k8XYzTbiXLNJgIL8gssebpLLBZQ.jpg",
+    });
+
+    sessionStorage.setItem("userId", auth.currentUser.uid);
     window.location.href = `${window.location.origin}/src/pages/main-page.html`;
   } catch (error) {
     if (error.code === "auth/email-already-in-use") {
@@ -81,6 +92,7 @@ registerEl.addEventListener("submit", async (e) => {
       passwordError.textContent = "Weak password";
     }
   }
+  registerEl.reset();
 });
 
 passwordTogle.addEventListener("click", () => {

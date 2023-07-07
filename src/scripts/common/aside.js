@@ -1,5 +1,5 @@
-import { signOut } from "firebase/auth";
-import { auth } from "./../../firebase/index.js";
+import { logout } from "../common/authUser.js";
+
 const asideDesktop = document.querySelector("#aside-desktop");
 
 asideDesktop.classList.add(
@@ -33,7 +33,7 @@ asideDesktop.innerHTML = `
 </div>
 `;
 
-const logout = document.querySelector("#logout");
-logout.addEventListener("click", async () => {
-  await signOut(auth);
+const logoutBtn = document.querySelector("#logout");
+logoutBtn.addEventListener("click", () => {
+  logout();
 });

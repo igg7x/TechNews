@@ -23,13 +23,11 @@ signInForm.addEventListener("submit", async (e) => {
   }
 
   try {
-    const userCredentials = await signInWithEmailAndPassword(
-      auth,
-      email,
-      password
-    );
+    await signInWithEmailAndPassword(auth, email, password);
+    sessionStorage.setItem("userId", auth.currentUser.uid);
     window.location.href = `${window.location.origin}/src/pages/index.html`;
   } catch (err) {
     loginError.textContent = err.message;
   }
+  signInForm.reset();
 });
