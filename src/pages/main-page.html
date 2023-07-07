@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/tailwind.css" />
+    <script
+      src="https://kit.fontawesome.com/b223d2f563.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-background">
+    <navbar id="desktop-navbar"></navbar>
+    <navbar id="mobile-navbar"></navbar>
+    <div class="flex w-full relative">
+      <main
+        class="pb-[100px] lg:pb-10 lg:py-[30px] w-full h-full min-h-screen lg:min-h-[calc(100vh-62px)]">
+        <aside type="module" id="aside-desktop"></aside>
+        <section
+          class="grid grid-cols-12 grid-rows-[12] w-[90%] gap-5 mx-auto lg:mt-0 h-full">
+          <!-- Lastest News -->
+          <section
+            id="scroll-news"
+            class="bg-black rounded-md p-3 drop-shadow-md w-full col-start-3 col-end-10 row-span-2">
+            <section
+              class="flex flex-col items-center justify-center w-full h-full">
+              <h1 class="font-title text-4xl text-text">Last News</h1>
+              <div
+                class="flex flex-col items-center mt-5 p-3 justify-center w-full h-full gap-3 overflow-y-scroll scrollbar-thin scrollbar-thumb-accent">
+                <div class="h-auto flex flex-col gap-4 p-2 max-h-[500px]">
+                  <div
+                    id="new-container"
+                    class="bg-slate-950 rounded-md p-3 w-[98%] flex flex-col">
+                    <div
+                      id="new-image-container"
+                      class="p-2 relative rounded-sm">
+                      <img
+                        draggable="false"
+                        src="../img/descarga (1).jpg"
+                        class="w-full h-full rounded-xl opacity-100"
+                        alt="image" />
+                      <a
+                        href="./movieDetail.html?movieId=${movie.id}"
+                        class="text-text opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[150px] justify-around absolute right-3 top-4 z-[80]">
+                        <i class="fa-regular fa-eye fa-lg text-accent"></i>
+                        View more
+                      </a>
+                    </div>
+                    <div
+                      id="new-info"
+                      class="flex flex-col gap-3 text-text items-start justify-center">
+                      <h1 class="font-title text-2xl">New Title</h1>
+                      <p class="font-text text-sm">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Necessitatibus earum amet et accusamus odio
+                        doloremque officia aliquid alias cupiditate
+                        exercitationem iste quibusdam repudiandae in laudantium
+                        neque, at odit perspiciatis impedit. Veniam iste, quas
+                        iusto molestias itaque neque possimus consectetur? Culpa
+                        laboriosam soluta reprehenderit pariatur similique
+                        dolores accusantium tempora, consequatur cupiditate
+                        corrupti at iure incidunt blanditiis fugit ut nobis
+                        saepe temporibus. Autem, sequi odio facere voluptates
+                        odit nostrum aliquam at! Ex excepturi deserunt obcaecati
+                        enim nihil pariatur labore in minus. Laborum doloribus
+                        cumque accusamus consectetur iusto architecto voluptas
+                        aut quo totam?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <!-- Trending Topics -->
+          <section
+            class="bg-black rounded-md drop-shadow-md w-full min-h-[400px] col-start-10 col-end-13 lg:max-h-[1020px]">
+            <section class="w-[90%] h-full flex flex-col p-3">
+              <div>
+                <h1 class="font-title text-2xl text-text text-center">
+                  Trending Topics
+                </h1>
+              </div>
+              <div
+                id="topics-container"
+                class="flex flex-col h-full items-start gap-3 overflow-y-scroll scrollbar-thin scrollbar-thumb-accent max-h-[350px]">
+                <div class="text-text">
+                  <h2 class="font-text text-xl">#Topic</h2>
+                  <p class="text-sm font-light">Description of this topic</p>
+                </div>
+                <div class="text-text">
+                  <h2 class="font-text text-xl">#Topic</h2>
+                  <p class="text-sm font-light">Description of this topic</p>
+                </div>
+                <div class="text-text">
+                  <h2 class="font-text text-xl">#Topic</h2>
+                  <p class="text-sm font-light">Description of this topic</p>
+                </div>
+                <div class="text-text">
+                  <h2 class="font-text text-xl">#Topic</h2>
+                  <p class="text-sm font-light">Description of this topic</p>
+                </div>
+                <div class="text-text">
+                  <h2 class="font-text text-xl">#Topic</h2>
+                  <p class="text-sm font-light">Description of this topic</p>
+                </div>
+                <div class="text-text">
+                  <h2 class="font-text text-xl">#Topic</h2>
+                  <p class="text-sm font-light">Description of this topic</p>
+                </div>
+                <div class="text-text">
+                  <h2 class="font-text text-xl">#Topic</h2>
+                  <p class="text-sm font-light">Description of this topic</p>
+                </div>
+                <div class="text-text">
+                  <h2 class="font-text text-xl">#Topic</h2>
+                  <p class="text-sm font-light">Description of this topic</p>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="../scripts/main-page/main-page.js"></script>
+    <script src="../scripts/common/navbar.js" type="module"></script>
+    <script src="../scripts//common/aside.js" type="module"></script>
+  </body>
+</html>
+<!-- col-span-12 lg:col-span-7 xl:col-span-8 row-span-2 lg:row-span-4 lg:row-start-1 w -->
+<!-- col-span-12 lg:col-span-5 xl:col-span-4 lg:col-start-8 xl:col-start-9 lg:row-[span_8_/_span_8]  -->
