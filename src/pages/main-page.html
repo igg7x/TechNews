@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/b223d2f563.js"
       crossorigin="anonymous"></script>
   </head>
-  <body class="bg-background">
+  <body class="bg-background mt-16">
     <navbar id="desktop-navbar"></navbar>
     <navbar id="mobile-navbar"></navbar>
     <div class="flex w-full relative">
@@ -23,204 +23,57 @@
             id="scroll-news"
             class="bg-black rounded-md p-3 drop-shadow-md w-full col-start-1 col-end-10 row-span-2">
             <section
-              class="flex flex-col items-center justify-center w-full h-full">
+              class="flex flex-col items-center relative justify-center w-full h-full">
               <h1
-                class="font-title text-4xl uppercase tracking-[1.15px] font-semibold text-text">
+                class="font-title underline text-4xl uppercase tracking-[1.15px] font-semibold text-text">
                 Lastest
               </h1>
               <div
-                class="flex flex-col items-center mt-5 p-3 justify-center w-full h-full gap-3 overflow-y-scroll scrollbar-thin scrollbar-thumb-accent">
-                <div class="h-auto flex flex-col gap-4 p-2 max-h-[500px]">
-                  <div
-                    id="new-container"
-                    class="bg-slate-950 rounded-md p-3 w-[98%] max-w-[725px] flex flex-col">
-                    <div
-                      id="new-image-container"
-                      class="p-2 relative rounded-sm">
-                      <img
-                        draggable="false"
-                        src="../img/descarga (1).jpg"
-                        class="w-full h-full rounded-xl opacity-100"
-                        alt="image" />
-                      <a
-                        href="./movieDetail.html?movieId=${movie.id}"
-                        class="text-text opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[150px] justify-around absolute right-3 top-4 z-[80]">
-                        <i class="fa-regular fa-eye fa-lg text-accent"></i>
-                        View more
-                      </a>
-                    </div>
-                    <div
-                      id="new-info"
-                      class="flex flex-col gap-3 w-full text-text items-start px-7 justify-center">
-                      <h1 class="font-title text-2xl">New Title</h1>
-                      <p class="font-text text-lg">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Necessitatibus earum amet et accusamus odio
-                        doloremque officia aliquid alias cupiditate
-                        exercitationem iste quibusdam repudiandae in laudantium
-                        neque, at odit perspiciatis impedit. Veniam iste, quas
-                        iusto molestias itaque neque possimus consectetur? Culpa
-                        laboriosam soluta reprehenderit pariatur similique
-                        dolores accusantium tempora, consequatur cupiditate
-                        corrupti at iure incidunt blanditiis fugit ut nobis
-                        saepe temporibus. Autem, sequi odio facere voluptates
-                        odit nostrum aliquam at! Ex excepturi deserunt obcaecati
-                        enim nihil pariatur labore in minus. Laborum doloribus
-                        cumque accusamus consectetur iusto architecto voluptas
-                        aut quo totam?
-                      </p>
-                    </div>
-                  </div>
+                class="flex flex-col items-center my-7 p-3 justify-center w-full h-full gap-3 overflow-y-scroll scrollbar-thin scrollbar-thumb-accent">
+                <div
+                  id="news-container"
+                  class="h-auto flex flex-col gap-4 p-2 max-h-[500px]"></div>
+              </div>
+              <div
+                class="flex w-[10%] justify-between items-center bottom-0 absolute">
+                <div id="prev-page-btn">
+                  <i
+                    id="prev-page-btn"
+                    class="fa-solid fa-lg fa-arrow-left text-text cursor-pointer hover:text-slate-800 ease-in-out duration-75"></i>
+                </div>
+                <p id="number-page" class="text-text font-light text-lg">1</p>
+                <div id="next-page-btn">
+                  <i
+                    class="fa-solid fa-lg fa-arrow-right text-text cursor-pointer hover:text-slate-800 ease-in-out duration-75"></i>
                 </div>
               </div>
             </section>
           </section>
           <!-- Technology  -->
           <section
-            class="bg-black rounded-md flex flex-col items-center gap-2 p-3 drop-shadow-md col-span-12 lg:col-span-7 xl:col-span-12 row-span-2 lg:row-span-4 lg:row-start-5 w-full min-h-[400px] lg:h-[500px]">
-            <h1
-              class="font-title text-4xl uppercase tracking-[1.15px] font-semibold text-text">
+            class="bg-black rounded-md flex flex-col items-center gap-2 p-3 drop-shadow-md col-span-12 lg:col-span-7 xl:col-span-12 row-span-2 lg:row-span-4 lg:row-start-5 row-end-7 w-full min-h-[400px] lg:h-[500px]">
+            <h4
+              class="font-title underline text-3xl uppercase tracking-[1.15px] font-semibold text-text">
               Technology
-            </h1>
+            </h4>
             <div
-              class="flex justify-center flex-wrap overflow-y-scroll scrollbar-thin scrollbar-thumb-accent gap-5"
-              id="news-container">
-              <div
-                class="flex flex-col items-center flex-wrap p-2 rounded-md bg-slate-950">
-                <div id="new-image-container" class="p-2 relative rounded-sm">
-                  <img
-                    draggable="false"
-                    src="../img/descarga (1).jpg"
-                    class="w-full h-full rounded-xl opacity-100"
-                    alt="image" />
-                </div>
-                <div class="flex w-full justify-evenly items-center gap-2">
-                  <h4 class="font-title text-2xl text-text">Title</h4>
-                  <a
-                    href="./movieDetail.html?movieId=${movie.id}"
-                    class="text-text opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[150px] justify-around left-3 top-0 z-[80]">
-                    <i class="fa-regular fa-eye fa-lg text-accent"></i>
-                    View more
-                  </a>
-                </div>
+              class="flex justify-center relative my-7 flex-wrap overflow-y-scroll scrollbar-thin scrollbar-thumb-accent gap-5"
+              id="tech-container"></div>
+            <div
+              class="flex w-[10%] justify-between items-center bottom-0 absolute">
+              <div id="prev-page-tech">
+                <i
+                  class="fa-solid fa-lg fa-arrow-left text-text cursor-pointer hover:text-slate-800 ease-in-out duration-75"></i>
               </div>
-              <div
-                class="flex flex-col items-center flex-wrap p-2 rounded-md bg-slate-950">
-                <div id="new-image-container" class="p-2 relative rounded-sm">
-                  <img
-                    draggable="false"
-                    src="../img/descarga (1).jpg"
-                    class="w-full h-full rounded-xl opacity-100"
-                    alt="image" />
-                </div>
-                <div class="flex w-full justify-evenly items-center gap-2">
-                  <h4 class="font-title text-2xl text-text">Title</h4>
-                  <a
-                    href="./movieDetail.html?movieId=${movie.id}"
-                    class="text-text opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[150px] justify-around left-3 top-0 z-[80]">
-                    <i class="fa-regular fa-eye fa-lg text-accent"></i>
-                    View more
-                  </a>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center flex-wrap p-2 rounded-md bg-slate-950">
-                <div id="new-image-container" class="p-2 relative rounded-sm">
-                  <img
-                    draggable="false"
-                    src="../img/descarga (1).jpg"
-                    class="w-full h-full rounded-xl opacity-100"
-                    alt="image" />
-                </div>
-                <div class="flex w-full justify-evenly items-center gap-2">
-                  <h4 class="font-title text-2xl text-text">Title</h4>
-                  <a
-                    href="./movieDetail.html?movieId=${movie.id}"
-                    class="text-text opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[150px] justify-around left-3 top-0 z-[80]">
-                    <i class="fa-regular fa-eye fa-lg text-accent"></i>
-                    View more
-                  </a>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center flex-wrap p-2 rounded-md bg-slate-950">
-                <div id="new-image-container" class="p-2 relative rounded-sm">
-                  <img
-                    draggable="false"
-                    src="../img/descarga (1).jpg"
-                    class="w-full h-full rounded-xl opacity-100"
-                    alt="image" />
-                </div>
-                <div class="flex w-full justify-evenly items-center gap-2">
-                  <h4 class="font-title text-2xl text-text">Title</h4>
-                  <a
-                    href="./movieDetail.html?movieId=${movie.id}"
-                    class="text-text opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[150px] justify-around left-3 top-0 z-[80]">
-                    <i class="fa-regular fa-eye fa-lg text-accent"></i>
-                    View more
-                  </a>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center flex-wrap p-2 rounded-md bg-slate-950">
-                <div id="new-image-container" class="p-2 relative rounded-sm">
-                  <img
-                    draggable="false"
-                    src="../img/descarga (1).jpg"
-                    class="w-full h-full rounded-xl opacity-100"
-                    alt="image" />
-                </div>
-                <div class="flex w-full justify-evenly items-center gap-2">
-                  <h4 class="font-title text-2xl text-text">Title</h4>
-                  <a
-                    href="./movieDetail.html?movieId=${movie.id}"
-                    class="text-text opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[150px] justify-around left-3 top-0 z-[80]">
-                    <i class="fa-regular fa-eye fa-lg text-accent"></i>
-                    View more
-                  </a>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center flex-wrap p-2 rounded-md bg-slate-950">
-                <div id="new-image-container" class="p-2 relative rounded-sm">
-                  <img
-                    draggable="false"
-                    src="../img/descarga (1).jpg"
-                    class="w-full h-full rounded-xl opacity-100"
-                    alt="image" />
-                </div>
-                <div class="flex w-full justify-evenly items-center gap-2">
-                  <h4 class="font-title text-2xl text-text">Title</h4>
-                  <a
-                    href="./movieDetail.html?movieId=${movie.id}"
-                    class="text-text opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[150px] justify-around left-3 top-0 z-[80]">
-                    <i class="fa-regular fa-eye fa-lg text-accent"></i>
-                    View more
-                  </a>
-                </div>
-              </div>
-              <div
-                class="flex flex-col items-center flex-wrap p-2 rounded-md bg-slate-950">
-                <div id="new-image-container" class="p-2 relative rounded-sm">
-                  <img
-                    draggable="false"
-                    src="../img/descarga (1).jpg"
-                    class="w-full h-full rounded-xl opacity-100"
-                    alt="image" />
-                </div>
-                <div class="flex w-full justify-evenly items-center gap-2">
-                  <h4 class="font-title text-2xl text-text">Title</h4>
-                  <a
-                    href="./movieDetail.html?movieId=${movie.id}"
-                    class="text-text opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[150px] justify-around left-3 top-0 z-[80]">
-                    <i class="fa-regular fa-eye fa-lg text-accent"></i>
-                    View more
-                  </a>
-                </div>
+              <p id="number-page-tech" class="text-text font-light text-lg">
+                1
+              </p>
+              <div id="next-page-tech">
+                <i
+                  class="fa-solid fa-lg fa-arrow-right text-text cursor-pointer hover:text-slate-800 ease-in-out duration-75"></i>
               </div>
             </div>
           </section>
-
           <!-- Trending Topics -->
           <section
             class="bg-black rounded-md drop-shadow-md w-full min-h-[400px] col-start-10 col-end-13 lg:max-h-[1020px]">
@@ -269,11 +122,36 @@
               </div>
             </section>
           </section>
-
-          <!-- Crypto news -->
+          <!-- Politics news -->
+          <section
+            class="bg-black rounded-md flex flex-col items-center gap-2 p-3 drop-shadow-md col-span-12 lg:row-start-9 lg:row-span-4 w-full min-h-[400px] lg:h-[500px]">
+            <h4
+              class="font-title underline text-3xl uppercase tracking-[1.15px] font-semibold text-text">
+              Politics
+            </h4>
+            <div
+              id="politics-container"
+              class="flex justify-center relative my-7 flex-wrap overflow-y-scroll scrollbar-thin scrollbar-thumb-accent gap-5"></div>
+            <div
+              class="flex w-[10%] justify-between items-center bottom-0 absolute">
+              <div id="prev-page-politics">
+                <i
+                  class="fa-solid fa-lg fa-arrow-left text-text cursor-pointer hover:text-slate-800 ease-in-out duration-75"></i>
+              </div>
+              <p id="number-page-politics" class="text-text font-light text-lg">
+                1
+              </p>
+              <div id="next-page-politics">
+                <i
+                  class="fa-solid fa-lg fa-arrow-right text-text cursor-pointer hover:text-slate-800 ease-in-out duration-75"></i>
+              </div>
+            </div>
+          </section>
         </section>
       </main>
     </div>
+    <footer id="footer"></footer>
+    <script type="module" src="../scripts/common/footer.js"></script>
     <script type="module" src="../scripts/main-page/main-page.js"></script>
     <script src="../scripts/common/navbar.js" type="module"></script>
     <script src="../scripts//common/aside.js" type="module"></script>
