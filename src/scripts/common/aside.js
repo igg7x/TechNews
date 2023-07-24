@@ -3,7 +3,7 @@ import { logout } from "../common/authUser.js";
 const asideDesktop = document.querySelector("#aside-desktop");
 
 asideDesktop.classList.add(
-  "bg-slate-950",
+  "bg-background",
   "w-[200px]",
   "border-r-2",
   "rounded-lg",
@@ -15,7 +15,6 @@ asideDesktop.classList.add(
 
 asideDesktop.innerHTML = `
 <div class = "w-full h-[calc(100vh-105px)] flex flex-col items-center  gap-3 pt-[20px]">
-<h4 class="font-light text-center text-xl text-slate-200">Menu</h4>
 <ul class=" pl-[10px] text-text font-semibold text-xl w-full  flex flex-col gap-6 items-start">
     <li ><i class="fa-solid fa-house"></i> Home</li>
     <li ><i class="fa-solid fa-magnifying-glass"></i> Categories</li>
