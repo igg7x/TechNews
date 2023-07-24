@@ -173,16 +173,16 @@ prevPagePolitics.addEventListener("click", () => {
   }
 });
 
-// getLatestNews().then((response) => {
-//   const { nextPage } = response;
-//   pages.push(nextPage);
-//   const { results } = response;
-//   results.forEach((info) => {
-//     if (info.image_url !== null) {
-//       createNewCard(info);
-//     }
-//   });
-// });
+getLatestNews().then((response) => {
+  const { nextPage } = response;
+  pages.push(nextPage);
+  const { results } = response;
+  results.forEach((info) => {
+    if (info.image_url !== null) {
+      createNewCard(info);
+    }
+  });
+});
 
 // getNewsByTech().then((response) => {
 //   const { nextPage } = response;
@@ -240,7 +240,7 @@ const createNewCard = (info) => {
       class="w-full h-full rounded-xl opacity-100"
       alt="image" />
       <a
-      href="#new-info"
+      href="./new-detail.html?title=${title}"
       class="text-text opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[150px] justify-around absolute right-3 top-4 z-[80]">
       <i class="fa-regular fa-eye fa-lg text-accent"></i>
       View more
@@ -285,7 +285,7 @@ const createShortCard = (info, parentContainer) => {
     class="w-full h-full rounded-xl   opacity-100"
     alt="image" />
     <a
-      href="#"  
+      href="./new-detail.html?title=${title}"  
       class="text-text absolute opacity-60 bg-black hover:border-2 hover:border-accent border-2 hover:opacity-100 border-transparent transition-[border] duration-200 ease-out rounded-md p-1 flex items-center w-[35px] h-[30px] justify-around right-3 top-3 z-[80]">
       <i class="fa-regular fa-eye fa-lg text-accent"></i>
     </a>

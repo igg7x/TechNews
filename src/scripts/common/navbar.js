@@ -24,7 +24,7 @@ DesktopNavBar.innerHTML = `
       <i class="fa-solid fa-house"></i> Home
       </a>
       <a href="./see-more-movies.html?filter=popular" class="hover:text-primaryBtn  font-title transition-colors cursor-pointer">
-      <i class="fa-solid fa-magnifying-glass"></i> Categories
+      <i class="fa-solid fa-magnifying-glass"></i> Search
       </a>
       <a href="./series.html" class="hover:text-primaryBtn  font-title transition-colors cursor-pointer">
       <i class="fa-regular fa-bookmark"></i> Saved

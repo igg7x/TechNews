@@ -20,3 +20,8 @@ export const getNewsByPolitics = async (language = "en", page = "") => {
   );
   return await results.json();
 };
+
+export const getNewByTitle = async (title = "") => {
+  const results = await fetch(`${url}apiKey=${key}&qInTitle="${title}"`);
+  return await results.json();
+};
